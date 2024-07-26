@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping-Center | createproduct</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">  
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-con">
+            <a href="index.html" class="brand">Shop Center</a>
+
+            <nav>
+                <ul id="links">
+                <li><a href="login.html">Sign In</a></li>
+                <li><a href="register.html">Sign Up</a></li>
+                </ul>
+                <ul id="user-info" style="display: none;">
+                    <li><a href="profile.html" id="user"></a></li>
+                    <li><a href="fav.html" id="user">Favorites</a></li>
+                    <li class="shop"><i class="fa-solid fa-cart-shopping"></i><span class="badge" style="display: none;">1</span>
+                    <div class="title" style="display: none;">
+                        <div></div>
+                      <a class="b" href="cart.html">View all Products</a>
+                    </div>
+                    </li>
+                    <li><a href="" id="logout">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    </header>
+
+    <section class="create-pro-page">
+        <div class="container">
+            <form>
+                <input type="text" placeholder="Name............" id="product-name">
+                <input type="text" placeholder="description............" id="product-des">
+                <select name="" id="size">
+                    <option value="small"></option>
+
+                </select>
+            </form>
+        </div>
+        
+    </section>
+    <script src="js/user.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/editproduct.js"></script>
+    
+</body>
+</html>

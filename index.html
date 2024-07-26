@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping-Center | index</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">  
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-con">
+            <a href="index.html" class="brand">Shop Center</a>
+
+            <nav>
+                <ul id="links">
+                <li><a href="login.html">Sign In</a></li>
+                <li><a href="register.html">Sign Up</a></li>
+                </ul>
+                <ul id="user-info" style="display: none;">
+                    <li><a href="profile.html" id="user"></a></li>
+                    <li><a href="product.html" id="user">My Products</a></li>
+                    <li><a href="fav.html" id="user">Favorites</a></li>
+                    <li class="shop"><i class="fa-solid fa-cart-shopping"></i><span class="badge" style="display: none;">1</span>
+                    <div class="title" style="display: none;">
+                        <div></div>
+                      <a class="b" href="cart.html">View all Products</a>
+                    </div>
+                    </li>
+                    <li><a href="" id="logout">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    </header>
+
+    <section class="home">
+        <div class="container">
+            <input type="text" id="search" placeholder="Search By Name">
+            <div class="products"></div>
+            
+            <div class="filter">
+                <h2 style="color: #52057b;">Filter By Size</h2>
+                <select id="sizefilter">
+                    <option value="" hidden>Filter by size</option>
+                    <option value="all">ALl</option>
+                    <option value="small">SMALL</option>
+                    <option value="medium">MEDIUM</option>
+                    <option value="large">LARGE</option>
+                    
+                </select>
+            </div>
+        </div>
+
+        <a href="createproduct.html" class="create-pro">
+            <i class="fa fa-plus"></i>
+        </a>
+    </section>
+    <script src="js/user.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/cartmenu.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

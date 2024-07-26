@@ -1,0 +1,278 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;/*??????*?*/
+}
+
+
+body{
+    font-family: "Kalnia Glaze", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+}
+
+.container{
+    width: 80%;
+    margin: auto;/*all elemnt in center*/
+}
+
+header{
+    
+    background-color: #333;
+    padding: 10px 0;
+}
+.header-con{
+    display: flex;
+    justify-content: space-between;/* a in right nav in left*/
+    align-items: center;
+}
+
+.header-con .brand{
+    font-size: 32px;
+    text-decoration: none;
+    color: brown;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;/* any dot star remove*/
+}
+nav li a{
+    display: block; /* can take width ????*/
+    color: brown;
+    min-width: 50px;
+    margin: 0 5px ;
+    padding: 5px;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+.section-form{
+    position: absolute;/* to make postion in middle*/
+    top: 50%;/* to make postion in middle*/
+    left: 50%;/* to make postion in middle*/
+    transform: translate(-50%,-50%);/* to make postion in middle*/
+    width: 60%;
+    text-align: center;
+    padding: 20px;
+    background-color: #824981;
+    outline: none;
+    
+}
+
+.section-form h2{
+    font-size: 50px;
+    letter-spacing: 2px;
+    color: aqua
+}
+
+.section-form form input{
+    display: block;
+    width: 100%;
+    margin: 5px 0;
+    height: 40px;
+    padding: 5px;
+    border: 1px solid #ddd;
+}
+
+.section-form form input[type="submit"]{
+    font-size: 25px;
+    text-transform: uppercase;
+    cursor: pointer;
+    
+}
+.section-form form input[type="submit"]:hover{
+    opacity: 0.8;
+}
+
+nav ul#user-info{
+    display: none;
+    align-items: center;
+}
+
+nav ul#user-info li{
+    position: relative;
+}
+
+nav ul#user-info li i{
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+nav ul#user-info li .badge{
+    width: 20px;
+    height: 20px;
+    background-color: crimson;
+    color: #fff;
+    text-align: center;
+    display: block;
+    position: absolute;/*can connet position: relative; to control it by top*/
+    border-radius: 50%;
+    top: -9px;
+    right: -11px;
+    font-size: 10px;
+    line-height: 20px;
+    display: none;
+}
+
+
+
+/*products*/
+
+#search{
+    width: 100%;
+    height: 40px;
+    display: block;
+    margin: 10px 0;
+    padding: 5px;
+    border: 1px solid tomato;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: "Kalnia Glaze", serif;
+}
+.products{
+    width: 60%;
+    margin: 10px 0;
+    float: left;
+    
+
+}
+.filter{
+    width: 35%;
+    float: right;
+    margin: 10px 0;
+}
+.product-item{
+    display: flex;
+    width: 100%;
+    border: 1px solid #ddd;
+    margin-top: 15px;
+    max-height: 150px;
+}
+.product-item-img{
+    width: 25%;
+    margin-right: 10px;
+}
+
+.bba{
+    display: block;
+    font-size: 20px;
+    color: tomato;
+    cursor: pointer;
+}
+
+
+.actions{
+    flex: 1;
+    text-align: right;/* to make it in right with flex-1 my=ust*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product-item .add-to-cart{
+    display: block;
+    margin-left: auto;/* to end of the cart */
+    background-color: tomato;
+    color: #fff;
+    border: 0;
+    padding: 10px  20px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: "Kalnia Glaze", serif;
+}
+
+.actions .fav{
+    cursor: pointer;
+    width: 20px;
+    display: block;
+    margin-left: auto;
+}
+nav ul#user-info li .title{
+    position: absolute;
+    width: 200px;
+    
+    transform: translate(-70px, 0px);
+    background: #eaeaea;
+    top: 40px;
+    padding: 10px;
+    border: 1px brown solid;
+    display: none;
+}
+
+.b{
+    display: block;
+    color:black;
+    margin: 0;
+    padding: 0;
+    background-color: tomato;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+}
+.item-details img{
+    width: 100%;
+    height: 200px;
+    border: 1px solid tomato;
+    padding: 2px;
+    
+
+}
+
+/*********************create pro ****************************/
+.create-pro{
+    position: fixed;
+    bottom: 15px;
+    right: 80px;/* any right make it in right 5 10 then 80 px make it from right to left */
+    width: 50px;
+    height: 50px;
+    background-color: #52057b;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;/*same height*/
+}
+.create-pro:hover{
+    opacity: 0.8;
+}
+#sizefilter{
+    width: 100%;
+    display: block;
+    height: 40px;
+}
+.edit{
+    display: block;
+    width: 140px;
+    border: none;
+    background: tomato;
+    color: #fff;
+    padding: 5px 15px;
+    cursor: pointer;
+    margin-left: 80px;
+    
+}
+
+.a-user{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin:10px 0px;
+}
+
+#editform input{
+    width: 100%;
+    display: block;
+    margin: 10px o;
+    height: 40px;
+}
+
+#editform input[type="submit"]{
+    cursor: pointer;
+    color: #fff;
+    background: #333;
+}
